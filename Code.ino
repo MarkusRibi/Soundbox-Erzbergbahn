@@ -1,4 +1,3 @@
-int taste1 = 0;
 int sound = 0;
 
 void setup() {
@@ -29,15 +28,15 @@ void loop() {
   if(digitalRead(6) == HIGH){
     sound = 3;
   }
-  if(digitalRead(8) == HIGH) {
+  if(digitalRead(8) == HIGH){
     sound = 4;
   }
-
-
-
-  
-  else{
-    digitalWrite(13, LOW);
+  if(digitalRead(10) == HIGH){
+    sound = 5;
+  }
+  if(digitalRead(12) == HIGH){
+    sound = 6;
+  }
   }
   if(sound == 1)
   {
@@ -51,15 +50,43 @@ void loop() {
   {
     digitalWrite(5, HIGH);
     delay(1000);
-    digitalWrite(5, LOW);      
+    digitalWrite(5, LOW);
+    delay();      
     sound = 0;
   }
   else if (sound == 3)
   {
-   digitalWrite(7, 
+   digitalWrite(7, HIGH);
+   delay(1000);
+   digitalWrite(7, LOW);
+   delay();
+   sound == 0;
    }
-  
-  
-  
-  
+  else if (sound == 4)
+  {
+    digitalWrite(9, HIGH);
+    delay(1000);
+    digitalWrite(9, LOW);
+    delay();
+    sound == 0;
+  }
+  else if (sound = 5)
+  {
+    digitalWrite(11, HIGH);
+    delay(1000);
+    digitalWrite(11, LOW);
+    delay();
+    sound == 0;
+  }
+  else if (sound = 6)x
+  {
+    digitalWrite(13, HIGH);
+    delay(1000);
+    digitalWrite(13, LOW);
+    delay();
+    sound = 0 ;
+  }
+  else {
+    sound = 0;
+  }
 }
