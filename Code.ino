@@ -37,13 +37,13 @@ void loop() {
   if(digitalRead(12) == HIGH){
     sound = 6;
   }
-  }
+  
   if(sound == 1)
   {
     digitalWrite(3, HIGH);
   delay(1000);
   digitalWrite(3, LOW);
-  delay();//In die Klammer die Zeit vom Sound              
+  delay(6);//In die Klammer die Zeit vom Sound              
     sound = 0; 
   }
   else if(sound == 2)
@@ -51,7 +51,7 @@ void loop() {
     digitalWrite(5, HIGH);
     delay(1000);
     digitalWrite(5, LOW);
-    delay();      
+    delay(6);      
     sound = 0;
   }
   else if (sound == 3)
@@ -59,7 +59,7 @@ void loop() {
    digitalWrite(7, HIGH);
    delay(1000);
    digitalWrite(7, LOW);
-   delay();
+   delay(6);
    sound == 0;
    }
   else if (sound == 4)
@@ -67,7 +67,7 @@ void loop() {
     digitalWrite(9, HIGH);
     delay(1000);
     digitalWrite(9, LOW);
-    delay();
+    delay(6);
     sound == 0;
   }
   else if (sound = 5)
@@ -75,15 +75,15 @@ void loop() {
     digitalWrite(11, HIGH);
     delay(1000);
     digitalWrite(11, LOW);
-    delay();
+    delay(6);
     sound == 0;
   }
-  else if (sound = 6)x
+  else if (sound = 6)
   {
     digitalWrite(13, HIGH);
     delay(1000);
     digitalWrite(13, LOW);
-    delay();
+    delay(6);
     sound = 0 ;
   }
   else {
